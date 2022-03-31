@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+[React 어플리케이션 테스트 심층 가이드 1](https://blog.rhostem.com/posts/2020-10-14-beginners-guide-to-testing-react-1)
+
+[React 어플리케이션 테스트 심층 가이드 2](https://blog.rhostem.com/posts/2020-10-15-beginners-guide-to-testing-react-2)
+
+[TDD](https://blog.rhostem.com/tag/tdd)
+
     현황(2022/2/20) 본 코스에서 사용하는 next-page-tester가 Nextjs ver12를 지원하지 않기 때문에
     아래 명령어를 실행하시고 Next의 version을 11로 변경하신 후 강의 진행해주세요🙇
 
