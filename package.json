@@ -10,12 +10,15 @@
     "test": "jest --env=jsdom --verbose"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.4",
     "axios": "^0.26.1",
     "msw": "^0.39.2",
     "next": "12.1.4",
+    "postcss": "^8.4.12",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "swr": "^1.2.2"
+    "swr": "^1.2.2",
+    "tailwindcss": "^3.0.23"
   },
   "devDependencies": {
     "@testing-library/dom": "^7.29.2",
@@ -23,11 +26,14 @@
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
     "@types/jest": "^26.0.20",
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
     "babel-jest": "^26.6.3",
     "eslint": "8.12.0",
     "eslint-config-next": "12.1.4",
     "jest": "^26.6.3",
-    "jest-css-modules": "^2.1.0"
+    "jest-css-modules": "^2.1.0",
+    "typescript": "^4.6.3"
   },
   "prettier": {
     "singleQuote": true,
