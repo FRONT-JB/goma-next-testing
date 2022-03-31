@@ -9,6 +9,16 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
     npm i react-dom@17.0.2
     npm i next@11.1.2
 
+[setImmediate.js](https://github.com/yuzujs/setImmediate)
+
+`npm i setimmediate`
+
+```js
+import 'setimmediate'
+// 이후 코스내에서 작성하는 모든 테스트 파일에 이 import문을 추가하여 주십시오.
+// GitHub코드는 이미 대처할 수 있는 내용으로 update되어 있습니다.
+```
+
 ## Project setup : Nextjs+React-testing-library+TypeScript+Tailwind CSS
 
 ## 1. Nextjs Project 생성
