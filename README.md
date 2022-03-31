@@ -60,6 +60,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
         ...
         "test": "jest --env=jsdom --verbose"
     },
+    // --verbose : 테스트 항목별 결과 목록
 ```
 
 ## 3. Typescript Install
