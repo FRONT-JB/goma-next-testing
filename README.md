@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+[[テスト編] Nextjs + React-testing-library でモダン React ソフトウェアテスト](https://www.udemy.com/course/nextjs-react-testing-library-react/)
+
 [React 어플리케이션 테스트 심층 가이드 1](https://blog.rhostem.com/posts/2020-10-14-beginners-guide-to-testing-react-1)
 
 [React 어플리케이션 테스트 심층 가이드 2](https://blog.rhostem.com/posts/2020-10-15-beginners-guide-to-testing-react-2)
