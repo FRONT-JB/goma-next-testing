@@ -1,5 +1,14 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+    현황(2022/2/20) 본 코스에서 사용하는 next-page-tester가 Nextjs ver12를 지원하지 않기 때문에
+    아래 명령어를 실행하시고 Next의 version을 11로 변경하신 후 강의 진행해주세요🙇
+
+<br />
+
+    npm i react@17.0.2
+    npm i react-dom@17.0.2
+    npm i next@11.1.2
+
 ## Project setup : Nextjs+React-testing-library+TypeScript+Tailwind CSS
 
 ## 1. Nextjs Project 생성
