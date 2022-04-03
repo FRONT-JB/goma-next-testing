@@ -17,7 +17,6 @@ describe('Navigation by Link', () => {
     expect(await screen.findByText('Blog Page')).toBeInTheDocument()
     // 이동한 페이지 렌더링 후 Blog Page 텍스트가 있는지 확인
     // screen.debug()
-
     userEvent.click(screen.getByTestId('comment-nav'))
     expect(await screen.findByText('Comment Page')).toBeInTheDocument()
     userEvent.click(screen.getByTestId('context-nav'))
