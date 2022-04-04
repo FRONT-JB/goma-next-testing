@@ -5,8 +5,6 @@ import { rest } from 'msw'
 import { setupServer } from 'msw/node'
 initTestHelpers()
 
-describe('', () => {})
-
 // Mock Data
 const handler = [
   rest.get('https://jsonplaceholder.typicode.com/posts/', (req, res, ctx) => {
@@ -51,7 +49,7 @@ afterAll(() => {
   server.close()
 })
 
-describe('BLog Page', () => {
+describe('Blog Page', () => {
   it('Should rnder the list of blogs pre-fetched by getStaticProps', async () => {
     const { page } = await getPage({
       route: '/blog-page',
