@@ -32,11 +32,11 @@ jobs:
     steps:
       - name: Check for Security
         run: |
-        echo "Running Security Checks"
-        sleep 5s;
-        echo "Running Security Checks 1"
-        sleep 5s;
-        echo "Running Security Checks 2"
-        sleep 5s;
-        echo "Running Security Checks 3"
-        sleep 5s;
+          echo "Running Security Checks"
+          sleep 5s;
+          echo "Running Security Checks 1"
+          sleep 5s;
+          echo "Running Security Checks 2"
+          sleep 5s;
+          echo "Running Security Checks 3"
+          sleep 5s;
