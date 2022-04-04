@@ -40,3 +40,14 @@ jobs:
           sleep 5s;
           echo "Running Security Checks 3"
           sleep 5s;
+
+  deploy:
+    name: Deployment
+    runs-on: ubunto-latest
+    # 배열안에 들어있는 job이 완료되면
+    needs: [lintTest, securityCheck]
+    steps:
+      - name: Install Dependencies
+        run: |
+          echo  "Deployment"
+          sleep 5s;
