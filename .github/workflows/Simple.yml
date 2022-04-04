@@ -43,7 +43,7 @@ jobs:
 
   deploy:
     name: Deployment
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     # 배열안에 들어있는 job이 완료되면
     needs: [lintTest, securityCheck]
     steps:
