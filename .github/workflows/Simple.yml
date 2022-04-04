@@ -1,0 +1,27 @@
+name: SimplePipeline
+
+on:
+  push:
+    # Git Push Event
+    branches: [master]
+    # branches: [main, dev, ...]
+
+jobs:
+  # 진행할 작업 명시
+  lintTest:
+    # 작업명
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: |
+          echo  "Running Installing Dependencies"
+          yarn install
+      - name: Run Linting
+        run: |
+          echo "Running Lining Tests"
+          yarn lint
+        env:
+          CI: true
