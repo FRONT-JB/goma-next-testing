@@ -9,7 +9,7 @@ initTestHelpers()
 const handler = [
   rest.get('https://jsonplaceholder.typicode.com/posts/', (req, res, ctx) => {
     // 위의 get Url에 search params를 같이 적어줄 경우 console.warn 이 발생한다.
-    // example ) https://jsonplaceholder.typicode.com/posts/?_limit=10
+    // example : https://jsonplaceholder.typicode.com/posts/?_limit=10
     // 아래의 query, _limit 변수를 이용해 searchParams를 확인한 후 진행하면 console.warn이 발생하지 않는다.
     const query = req.url.searchParams
     const _limit = query.get('_limit')
