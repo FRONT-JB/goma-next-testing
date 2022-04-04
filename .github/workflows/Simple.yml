@@ -10,9 +10,7 @@ on:
     paths:
       - '**.ts'
       - '**.tsx'
-    paths-ignore:
-      - '**.md'
-      - 'docs/**'
+      - '!**/README.md'
 
 jobs:
   # 진행할 작업 명시
