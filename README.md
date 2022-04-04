@@ -16,4 +16,8 @@ _[React 어플리케이션 테스트 심층 가이드 2](https://blog.rhostem.co
 
 **[# Navigation Testing](docs/navigation.md)**
 
-**[# Blog Page Testing](docs/navigation.md)**
+**[# Blog Page Testing](docs/blog.md)**
+
+**[# Blog Detail Testing](docs/blog-detail.md)**
+
+**[# Component Props Testing](docs/props.md)**
