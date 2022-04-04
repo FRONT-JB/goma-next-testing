@@ -7,7 +7,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 const PostDetail = ({ id, title, body }: POST) => {
   return (
     <Layout title="title">
-      <p className="m=-4">
+      <p className="m-4">
         {'ID : '}
         {id}
       </p>
