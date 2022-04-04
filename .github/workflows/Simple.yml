@@ -4,14 +4,24 @@ on:
   push:
     # Git Push Event
     branches: [master]
+  pull_request:
+    branches: [master, develop]
     # branches: [main, dev, ...]
+    paths:
+      - '**.ts'
+      - '**.tsx'
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
 
 jobs:
   # 진행할 작업 명시
   lintTest:
     # 작업명
     name: Lint
+    # action을 어떤 환경에서 실행시킬지 ( Require )
     runs-on: ubuntu-latest
+    # Job 안에서 순차적으로 실행되는 프로세스 단위. step에서 명령을 내리거나, action을 실행할 수 있다.
     steps:
       - name: Clone Repository
         uses: actions/checkout@v2
@@ -32,7 +42,9 @@ jobs:
   securityCheck:
     # 작업명
     name: Security Check
+    # action을 어떤 환경에서 실행시킬지 ( Require )
     runs-on: ubuntu-latest
+    # Job 안에서 순차적으로 실행되는 프로세스 단위. step에서 명령을 내리거나, action을 실행할 수 있다.
     steps:
       - name: Check for Security
         run: |
