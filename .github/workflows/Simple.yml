@@ -1,9 +1,9 @@
 name: SimplePipeline
 
 on:
-  push:
-    # Git Push Event
-    branches: [master]
+  # push:
+  # Git Push Event
+  # branches: [master]
   pull_request:
     branches: [master, develop]
     # branches: [main, dev, ...]
