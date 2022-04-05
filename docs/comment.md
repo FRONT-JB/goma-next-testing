@@ -1,3 +1,48 @@
+```js
+// test-utils
+import React from 'react'
+import { render } from '@testing-library/react'
+import { SWRConfig } from 'swr'
+
+const Wrapper = ({ children }) => {
+  return <SWRConfig value={{ dedupingInterval: 0 }}>{children}</SWRConfig>
+}
+
+const customRender = (ui, options) =>
+  render(ui, { wrapper: Wrapper, ...options })
+
+// re-export everything
+export * from '@testing-library/react'
+
+// override render method
+export { customRender as render }
+```
+
+```js
+// before
+import { render, screen } from '@testing-library/react'
+
+// after
+import { render, screen } from './test-utils'
+```
+
+**useSWR**을 사용하게 되면 테스트 코드에서 아래와 같이 cache를 제거한 config으로 컴포넌트를 렌더링 해야한다.
+
+```js
+// This md : Code Line 96, 114
+render(
+  <SWRConfig value={{ dedupingInterval: 0 }}>
+    <App />
+  </SWRConfig>
+)
+```
+
+    매번 이 방식의 렌더를 사용하게 되면 코드 중복이 발생하므로
+    위의 test-utils에서 export 하고있는 render와 screen을 사용하면 된다.
+
+---
+
+```js
 import { render, screen, cleanup } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 import { SWRConfig } from 'swr'
@@ -74,3 +119,4 @@ describe('Comment page with use SWR / Success + Error', () => {
     expect(await screen.findByText('Error!')).toBeInTheDocument()
   })
 })
+```
