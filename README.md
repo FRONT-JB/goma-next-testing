@@ -25,3 +25,7 @@ _[Jest로 테스트 전/후 처리하기](https://www.daleseo.com/jest-before-af
 **[# Component Props Testing](docs/props.md)**
 
 **[# Comment Page Testing](docs/comment.md)**
+
+**[# Task Page ( Static ) Testing](docs/task-page-static.md)**
+
+**[# Task Page ( SWR ) Testing](docs/task-page-swr.md)**
