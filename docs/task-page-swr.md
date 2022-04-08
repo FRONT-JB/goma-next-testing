@@ -62,10 +62,8 @@ describe('Todos page / SWR', () => {
     )
     expect(await screen.findByText('Static task C')).toBeInTheDocument()
     expect(screen.getByText('Static task D')).toBeInTheDocument()
-    // screen.debug()
     expect(await screen.findByText('Static task A')).toBeInTheDocument()
     expect(screen.getByText('Static task B')).toBeInTheDocument()
-    // screen.debug()
   })
   it('Should render Error text when fetch failed', async () => {
     server.use(
